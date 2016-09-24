@@ -1,0 +1,147 @@
+[
+  {
+    "name": "intro",
+    "type": "text",
+    "label": "Intro",
+    "description": "The intro text (maximum 100 characters)",
+    "maxLength": 100,
+    "optional": true
+  },
+  {
+    "name": "arithmeticType",
+    "type": "select",
+    "label": "Arithmetic type",
+    "options": [
+      {
+        "value": "addition",
+        "label": "Addition"
+      },
+      {
+        "value": "subtraction",
+        "label": "Subtraction"
+      },
+      {
+        "value": "multiplication",
+        "label": "Multiplication"
+      },
+      {
+        "value": "division",
+        "label": "Division"
+      }
+    ],
+    "default": "addition"
+  },
+  {
+    "name": "maxQuestions",
+    "type": "number",
+    "label": "Max number of questions",
+    "default": 20,
+    "min": 2,
+    "max": 100
+  },
+  {
+    "name": "UI",
+    "type": "group",
+    "label": "User interface translations",
+    "common": true,
+    "fields": [
+      {
+        "name": "score",
+        "type": "text",
+        "label": "Scoring during quiz",
+        "default": "Score:"
+      },
+      {
+        "name": "scoreOnResultPage",
+        "type": "text",
+        "label": "Scoring on result page",
+        "default": "Score: @score / @maxScore"
+      },
+      {
+        "name": "time",
+        "type": "text",
+        "label": "Time",
+        "default": "Time: @time"
+      },
+      {
+        "name": "resultPageHeader",
+        "type": "text",
+        "label": "Result page header",
+        "default": "Finished!"
+      },
+      {
+        "name": "go",
+        "type": "text",
+        "label": "Go label",
+        "default": "GO!"
+      },
+      {
+        "name": "startButton",
+        "type": "text",
+        "label": "Start button label",
+        "default": "Start"
+      },
+      {
+        "name": "retryButton",
+        "type": "text",
+        "label": "Retry button label",
+        "default": "Retry"
+      },
+      {
+        "name": "correctText",
+        "type": "text",
+        "label": "Readspeaker text for correct answer",
+        "default": "Correct"
+      },
+      {
+        "name": "incorrectText",
+        "type": "text",
+        "label": "Readspeaker text for incorrect answer",
+        "default": "Incorrect. Correct answer was :num"
+      },
+      {
+        "name": "durationLabel",
+        "type": "text",
+        "label": "Readspeaker label for the timer",
+        "default": "Duration in hours, minutes and seconds."
+      },
+      {
+        "name": "humanizedQuestion",
+        "type": "text",
+        "label": "Readspeaker text for question",
+        "default": "What does :arithmetic equal?"
+      },
+      {
+        "name": "plusOperator",
+        "type": "text",
+        "label": "Plus operator text",
+        "default": "plus"
+      },
+      {
+        "name": "subtractionOperator",
+        "type": "text",
+        "label": "Subtraction operator text",
+        "default": "minus"
+      },
+      {
+        "name": "multiplicationOperator",
+        "type": "text",
+        "label": "Multiplication operator text",
+        "default": "times"
+      },
+      {
+        "name": "divisionOperator",
+        "type": "text",
+        "label": "Division operator text",
+        "default": "divided by"
+      },
+      {
+        "name": "slideOfTotal",
+        "type": "text",
+        "label": "Slide number text",
+        "description": "Announces current slide and total number of slides, variables are :num and :total",
+        "default": "Slide :num of :total"
+      }
+    ]
+  }
+]
